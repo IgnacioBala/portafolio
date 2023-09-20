@@ -1,3 +1,4 @@
+
 const proyects = [
     {
         id:1,
@@ -13,6 +14,7 @@ const proyects = [
         img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
         host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
     },
+   
     
 ]
 
