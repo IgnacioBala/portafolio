@@ -1,17 +1,24 @@
 const proyects = [
     {
         id:1,
-        title:"contador (2023)",
-        description:"Contador hecho en la casa del futuro con mucho amor",
+        title:"comentarios (2023)",
+        description:"Comentarios hecho en la casa del futuro con mucho amor",
         img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
-        host:""
+        host:"https://ignaciobala.github.io/Comentario-casadelfuturo/"
     },
     {
         id:2,
-        title:"",
-        description:"",
-        img:"",
-        host:""
+        title:"Cartas catalogo guitarras",
+        description:"Cartas hechas en la casa del futuro",
+        img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
+        host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
+    },
+    {
+        id:2,
+        title:"Cartas catalogo guitarras",
+        description:"Cartas hechas en la casa del futuro",
+        img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
+        host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
     },
 ]
 
