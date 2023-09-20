@@ -13,13 +13,7 @@ const proyects = [
         img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
         host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
     },
-    {
-        id:2,
-        title:"Cartas catalogo guitarras",
-        description:"Cartas hechas en la casa del futuro",
-        img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
-        host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
-    },
+    
 ]
 
 const proyectosSection = document.querySelector("#proyects")
