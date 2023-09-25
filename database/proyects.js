@@ -12,7 +12,7 @@ const proyects = [
         title:"Cartas catalogo guitarras",
         description:"Cartas hechas en la casa del futuro",
         img:"https://i.postimg.cc/jq79LfT9/Casita-del-Futuro.png",
-        host:"https://ignaciobala.github.io/Casa-del-futuro--Javascript/cartas.html"
+        host:"https://ignaciobala.github.io/c/"
     },
    
     
