@@ -1,5 +1,6 @@
 /* Importar la tipografía */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;700&display=swap');
+
 /* Importar estilos */
 @import url(./header.css);
 @import url(./aboutme.css);
@@ -9,58 +10,92 @@
 @import url(./footer.css);
 
 /* Estilos globales */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Variables de color */
-:root{
-    --color-primary: #2167cf;
-    --color-primary1: #a0e4c6;
-    --color-primary2: #5b2be2;
-    --color-secondary: #84e8d7;
-    --font-color: #122223;
-    --color-orange: #9c38d6;
-    --box-shadow: 2px 2px 10px rgb(81, 81, 81);
+:root {
+    --color-primary: #ffffff;  /* Color claro para el tema claro */
+    --color-primary1: #000000; /* Color oscuro para el tema oscuro */
+    --color-secondary: #cccccc; /* Color secundario */
+    --color-primary2: #f0f0f0; /* Gris claro */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-html{
+/* globals.css */
+body {
+    background-color: var(--color-primary1); /* Fondo según el tema */
+    color: var(--color-secondary); /* Texto según el tema */
+    font-family: 'IBM Plex Mono', monospace; /* Fuente */
+}
+
+body.light {
+    --color-primary: #ffffff; /* Fondo blanco */
+    --color-primary1: #f0f0f0; /* Gris claro */
+    --color-secondary: #000000; /* Texto negro */
+}
+
+body.dark {
+    --color-primary: #000000; /* Fondo negro */
+    --color-primary1: #1a1a1a; /* Gris oscuro */
+    --color-secondary: #ffffff; /* Texto blanco */
+}
+/* Otros estilos globales */
+
+/* Estilo para el scroll suave */
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--color-primary1);
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--font-color);
-}
 
-ul{
+
+/* Estilos de listas */
+ul {
     list-style: none;
 }
 
-a{
+/* Estilos de enlaces */
+a {
     text-decoration: none;
-    color: unset;
+    color: var(--color-secondary); /* Color del texto de enlaces */
 }
 
-.title{
+
+.h1{
+    color: rgba(70, 69, 71, 0.692);
+}
+
+
+/* Estilos del título */
+.title {
     text-align: center;
     padding: 16px;
     margin: 24px 0;
     font-size: 40px;
-    background-color: var(--color-primary) ;
+    background-color: var(--color-primary);
     box-shadow: var(--box-shadow);
+    color: rgba(70, 69, 71, 0.692); /* Texto blanco para el título */
 }
 
-.button{
+/* Estilos del botón */
+.button {
     padding: 8px 16px;
     text-transform: uppercase;
     font-weight: 700;
-    background: linear-gradient(-45deg, var(--color-orange) 0%, var(--color-primary) 50%,var(--color-secondary) 100% );
+    background: linear-gradient(-45deg, var(--color-primary2) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto blanco en el botón */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: background 0.3s, transform 0.2s; /* Transición suave */
+    box-shadow: var(--box-shadow); /* Sombra del botón */
 }
 
-.button{
-    box-shadow: var(--box-shadow);
+/* Efecto hover en el botón */
+.button:hover {
+    transform: translateY(-2px); /* Levantar un poco el botón al pasar el mouse */
+    background: linear-gradient(-45deg, var(--color-secondary) 0%, var(--color-primary2) 50%, var(--color-primary) 100%); /* Cambiar colores en hover */
 }

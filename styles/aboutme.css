@@ -14,7 +14,10 @@
 
 .aboutme-info h1{
     font-size: 40px;
-    color: #FFF;
+    .h1{
+        color: rgba(70, 69, 71, 0.692);
+    }
+    
 }
 
 

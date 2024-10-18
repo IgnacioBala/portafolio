@@ -1,37 +1,34 @@
-
-h2.title.contact{
+h2.title.contact {
     margin-bottom: 0;
 }
 
-
-footer{
-    background-color: #4627cdc4;
-
+footer {
+    background-color: var(--color-primary1); /* Cambiado a una variable de color para mayor consistencia */
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 32px;
-
 }
 
-footer a:hover{
-    transition: all 500ms;
+footer a {
+    color: var(--color-secondary); /* Color del texto de los enlaces */
+    transition: color 500ms; /* Transición para el color */
+}
+
+footer a:hover {
     transform: scale(1.1);
-    color: var( --color-secondary-- #0041f5);
-
+    color: #0041f5; /* Color del texto en hover */
 }
 
-
-footer a:hover i{
+footer a:hover i {
     transition: all 250ms;
     font-size: 45px;
 }
 
-footer a:hover h3{
+footer a:hover h3 {
     visibility: hidden;
 }
 
-
-footer a i{
+footer a i {
     font-size: 50px;
 }

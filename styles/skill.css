@@ -3,28 +3,34 @@
     gap: 32px;
     justify-content: center;
     padding: 40px;
+    color: black;
 }
 
 #skill article {
     width: 200px;
-    background-color: var(--color-orange);
+    background-color: var(--color-primary1); /* Fondo claro para modo claro */
     padding: 48px 8px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    transition: background 5s;
-
-
-
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid var(--color-secondary); /* Borde que combina con el fondo */
+    color: var(--color-secondary); /* Color de texto blanco */
 }
 
 #skill article:hover {
-    background: linear-gradient(-45deg, var(--color-orange) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+    background-color: #cccccc; /* Cambia a gris en hover */
+    transform: scale(1.05);
+}
 
+/* Cambia el color del icono al pasar el ratón */
+#skill article:hover i {
+    color: black; /* Cambia a negro en hover */
 }
 
 #skill article i {
     font-size: 56px;
+    color: var(--color-secondary); /* Color original de los iconos */
 }

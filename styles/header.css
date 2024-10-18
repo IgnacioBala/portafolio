@@ -1,11 +1,59 @@
+ /* Importar la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;700&display=swap');
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+    --color-primary: #ffffff; /* Color claro para el tema claro */
+    --color-primary1: #000000; /* Color oscuro para el tema oscuro */
+    --color-secondary: #cccccc; /* Color secundario */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Tema claro */
+body.light {
+    --color-primary: #ffffff; /* Fondo blanco */
+    --color-primary1: #f0f0f0; /* Gris claro */
+    --color-secondary: #000000; /* Texto negro */
+}
+
+/* Tema oscuro */
+body.dark {
+    --color-primary: #000000; /* Fondo negro */
+    --color-primary1: #1a1a1a; /* Gris oscuro */
+    --color-secondary: #ffffff; /* Texto blanco */
+}
+
+/* Estilos del body */
+body {
+    background-color: var(--color-primary1); /* Fondo según el tema */
+    color: var(--color-secondary); /* Texto según el tema */
+    font-family: 'IBM Plex Mono', monospace; /* Fuente */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary1); /* Color del texto de enlaces */
+}
+
+/* Estilos del header */
 header {
-    background-color: var(--color-primary1);
+    background-color: var(--color-primary); /* Fondo del header según el tema */
     box-shadow: var(--box-shadow);
     padding: 16px;
     position: sticky;
     top: 0;
     z-index: 999;
-
 
     display: flex;
     justify-content: space-between;
@@ -19,12 +67,12 @@ header {
 
 .navegation a {
     font-size: 20px;
+    color: var(--color-secondary); /* Color del texto */
 }
 
-.navegation a:hover{
+.navegation a:hover {
     font-weight: 700;
 }
-
 
 /* Estilos del cambio de tema */
 .switch {
@@ -35,14 +83,14 @@ header {
     height: 2em;
 }
 
-/* Hide default HTML checkbox */
+/* Ocultar el checkbox HTML por defecto */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-/* The slider */
+/* El slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -50,7 +98,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary); /* Color del slider según el tema */
     transition: .5s;
     border-radius: 30px;
 }
@@ -63,24 +111,17 @@ header {
     border-radius: 50%;
     left: 10%;
     bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px var(--color-secondary);
-    background: var(--color-primary);
+    box-shadow: inset 8px -4px 0px 0px var(--color-secondary); /* Sombra interna */
+    background: var(--color-primary); /* Fondo del círculo según el tema */
     transition: .5s;
 }
 
-input:checked+.slider {
-    background-color: var(--color-primary);
+/* Estilos al activar el checkbox */
+input:checked + .slider {
+    background-color: var(--color-primary); /* Cambia el fondo del slider al activarse */
 }
 
-input:checked+.slider:before {
-    transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px var(--color-secondary);
+input:checked + .slider:before {
+    transform: translateX(100%); /* Desplazamiento del círculo al activarse */
+    box-shadow: inset 15px -4px 0px 15px var(--color-secondary); /* Cambia la sombra interna */
 }
-
-
-/* FLEXBOX */
-/* display: flex  ----> activamos flexbox */
-/* flex-direction: row/column ----> definir el eje principal */
-/* justify-content: start/center/end/space-between/space-evenly/space-arround --> Ajustar el contenido de acuerdo al eje principal  */
-/* aling-items: start/center/end  ---> Ajustar el contenido de acuerdo al eje secundario*/
-/* gap: px/%/em/rem/vh/vw ---> Separar un elemento de otro */
